@@ -21,12 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const cardMargin = 24;
 
     const phoneScreenTexts = [
-        "Get clear guidance day after day while tracking your progress.",
-        "Strengthen your back with moves made just for you.",
+        "Get clear guidance day after day, helping you stay on track and make progress.",
+        "Strengthen your back with personalized exercises designed to fit your needs.",
         "Stay on track—set reminders that fit your day to stretch and move.",
         "Log your back health, feelings, and score—watch your progress.",
         "Stay motivated—compare with peers and challenge friends to join you!"
     ];
+    
 
     emailForm.addEventListener('submit', function(e) {
         e.preventDefault();

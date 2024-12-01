@@ -55,6 +55,9 @@ body {
 .nav-links {
     display: flex;
     gap: 2rem;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
 }
 
 .nav-links a {
@@ -115,16 +118,19 @@ body {
     font-size: 24px;
     color: #000000;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 29.5px;
 }
 
 .email-form {
     display: flex;
-    max-width: 500px;
     background-color: #fff;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 43px;
+    width: 480px;
+    align-items: center;
 }
 
 .email-form input {
@@ -139,11 +145,17 @@ body {
     background-color: #0066ff;
     color: white;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    padding: 16px 32px;
-    white-space: nowrap;
+    padding: 16px 24px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 139px !important;
+    flex-shrink: 0;
+
+
 }
 
 .modal {
@@ -297,20 +309,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-left: 20px; 
 }
 
 .intro-content h2 {
     font-weight: 400;
     font-size: 50px;
+    text-align: left; 
 }
 
 .intro-content p {
     color: #666;
-    text-align: left;
     font-weight: 500;
     font-size: 18px;
     line-height: 32.4px;
+    margin-left: 130px; 
+    text-align: left; 
 }
+
 
 .start-button {
     display: inline-flex;
@@ -357,6 +373,13 @@ body {
     text-align: center;
     align-items: center;
 }
+.plan-intro P {
+    color: #666;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32.4px;
+}
 
 .italic-text {
     font-style: italic;
@@ -372,8 +395,8 @@ body {
     background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/after-intro-bg-Ouvnu1CIFbk5INowcd3ofpVoKS694R.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 600px;
-    top: 500px;
+    height: 580px;
+    top: 585px;
     left: 1px;
     opacity: 80%;
 }
@@ -403,8 +426,8 @@ body {
 .phone-nav-buttons {
     position: absolute;
     top: 50%;
-    left: -30px;
-    right: -30px;
+    left: -55px;
+    right: -55px;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -413,8 +436,8 @@ body {
 .phone-nav-button {
     background: none;
     border: none;
-    font-size: 24px;
-    color: #333;
+    font-size: 58px;
+    color: #000000;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -450,6 +473,7 @@ body {
     width: 250px;
     height: 45px;
     z-index: 2;
+   
 }
 
 .get-started-button:hover {
@@ -669,7 +693,7 @@ body {
 
 .faq-section {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
 .faq-intro {
@@ -692,10 +716,7 @@ body {
     font-weight: 400;
 }
 
-.faq-bold-text {
-    font-weight: 600;
-    margin-bottom: 50px;
-}
+
 
 .faq-container {
     max-width: 800px;

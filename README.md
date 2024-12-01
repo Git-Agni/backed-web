@@ -26,6 +26,7 @@ The project is organized into three primary files for structure, styling, and in
      - **Intro Section**: Describes the personalized features and benefits of the app.
      - **Main Section**: Includes app mockup previews displayed in an interactive carousel.
      - **Testimonials Section**: Highlights real user stories with images and optional videos.
+     - **FAQ Section**: Provides answers to commonly asked questions about BackEd's features and usage.
 
 ### 2. **CSS - `styles.css`**
    - Handles the visual design and responsiveness.
@@ -73,7 +74,14 @@ The project is organized into three primary files for structure, styling, and in
    - Showcases real user stories with clickable cards.
    - Cards can play a video or display a description of the user's journey.
 
-### 5. **Interactive Features**
+###5. **FAQ Section**
+  - Why use BackEd?: Explanation of personalized routines designed to alleviate back pain.
+  - Timeline for Results: Typical user experiences with consistent use.
+  - Independent Usage: Guidance on safe use without a physiologist.
+  - Posture Correction: Details on improving posture through BackEd's routines.
+  - Assessment Process: How BackEd evaluates and optimizes plans for users.
+
+### 6. **Interactive Features**
    - Smooth scrolling for navigation links.
    - Active link updates as users scroll through sections.
    - Auto-advancing carousel for testimonials.
