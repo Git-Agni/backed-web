@@ -74,7 +74,7 @@ The project is organized into three primary files for structure, styling, and in
    - Showcases real user stories with clickable cards.
    - Cards can play a video or display a description of the user's journey.
 
-###5. **FAQ Section**
+5. **FAQ Section**
   - Why use BackEd?: Explanation of personalized routines designed to alleviate back pain.
   - Timeline for Results: Typical user experiences with consistent use.
   - Independent Usage: Guidance on safe use without a physiologist.
