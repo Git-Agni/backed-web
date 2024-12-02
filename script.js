@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "Get clear guidance day after day, helping you stay on track and make progress.",
         "Strengthen your back with personalized exercises designed to fit your needs.",
         "Stay on track—set reminders that fit your day to stretch and move.",
-        "Log your back health, feelings, and score—watch your progress.",
+        "Log your back health, feelings, and score—watch your progress as you move forward",
         "Stay motivated—compare with peers and challenge friends to join you!"
     ];
     

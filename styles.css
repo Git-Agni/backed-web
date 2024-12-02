@@ -86,6 +86,7 @@ body {
 
 .hero-text {
     max-width: 600px;
+    
 }
 
 .hero-text h1 {
@@ -96,14 +97,28 @@ body {
     letter-spacing: -0.02em;
     color: #000;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Allows wrapping */
     text-align: left;
+    flex-direction: column;
 }
 
-.line-one, .line-two {
-    display: block; 
+.hero-text span {
     white-space: nowrap; 
 }
+
+.line-one {
+    display: block; 
+    
+}
+
+.line-two {
+    display: inline; 
+}
+
+
+
+
+
 
 .hero-text p {
     font-size: 24px;
@@ -352,7 +367,7 @@ body {
 
 .main-section {
     text-align: center;
-    padding: 60px 0;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,8 +410,8 @@ body {
     background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/after-intro-bg-Ouvnu1CIFbk5INowcd3ofpVoKS694R.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 580px;
-    top: 585px;
+    height: 545px;
+    top: 535px;
     left: 1px;
     opacity: 80%;
 }
@@ -692,23 +707,25 @@ body {
 }
 
 .faq-section {
-    padding: 80px 0;
+    padding: 0px;
     background-color: #ffffff;
 }
 
 .faq-intro {
     margin: 0 auto; 
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
 }
 
 .faq-intro h2 {
     font-size: 48px;
     margin-bottom: 16px;
     line-height: 1.2;
+    margin-left: 0;
 }
 
 .faq-italic-text {
@@ -794,7 +811,7 @@ body {
         max-width: 960px;
     }
 
-    .hero-text h1, .intro-content h2 {
+    .hero-text h1, .intro-content h2, .test-intro h2, .faq-intro h2 {
         font-size: 4rem;
     }
 
@@ -808,7 +825,7 @@ body {
         max-width: 720px;
     }
 
-    .hero-text h1, .intro-content h2 {
+    .hero-text h1, .intro-content h2 , .test-intro h2, .faq-intro h2{
         font-size: 3.5rem;
     }
 
@@ -889,7 +906,7 @@ body {
         padding: 0 20px;
     }
 
-    .intro-content h2 {
+    .intro-content h2, .test-intro h2, .faq-intro h2 {
         font-size: 2.5rem;
         text-align: center;
     }
@@ -958,7 +975,7 @@ body {
         font-size: 2.2rem;
     }
 
-    .intro-content h2 {
+    .intro-content h2, .test-intro h2, .faq-intro h2 {
         font-size: 2rem;
     }
 
@@ -990,5 +1007,156 @@ body {
 
     .faq-question h3 {
         font-size: 14px;
+    }
+}
+@media (max-width: 515px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 60px;
+        justify-content: center;
+        
+    }
+    
+    .line-one,
+    .line-two{
+    
+        display: block; 
+    }
+
+    .line-one {
+        margin-bottom: 0;
+    }
+
+    .hero-content {
+        padding-top: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: calc(100vh - 80px);
+    }
+
+    .notifications {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90% !important;
+        max-width: 385px;
+        border-radius: 25px;
+    }
+    .button{
+        align-items: center;
+        text-align: center;
+       }
+    
+
+    .intro-text{
+        width: 100;
+        max-width: 350px;
+        height: 75px;
+        font-size: 14px;
+    }
+    
+    .get-started-button{
+        width: 45%;
+        border-radius: 25px; 
+        height: 45px;
+        padding: 16px 24px;
+
+    }
+    #phoneScreenText{
+        width: 90%;
+        max-width: 370px;
+        border-radius: 25px; 
+    }
+    .email-form {
+        width: 100%;
+        max-width: 100%;
+        
+    }
+
+    .intro-media {
+        width: 400px;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;  
+        border-radius: 30px; 
+    }
+    .intro-image{
+        width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; 
+    display: block; 
+    }
+    .play-button{
+        bottom: 280px;
+        left:200px
+        
+    }
+    
+
+    .testimonial-card {
+        flex: 0 0 304px;
+        width: 304px;
+        height: 353px;
+    }
+
+    .phone-nav-buttons {
+        left: -35px;
+        right: -35px;
+        
+    }
+
+    .phone-nav-button {
+        font-size: 40px;
+    }
+    .intro-content p {
+        text-align: center; 
+        margin: 0 auto; 
+        display: block; 
+        padding: 0 15px;
+    }
+    .blurred-background{
+        width:100%;
+        height: 580px;
+        top:475px;
+        
+    }
+    
+
+}
+
+@media (max-width: 375px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-media {
+        width: 100%;
+        max-width: 343px;
+        border-radius: 30px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 304px;
+        width: 304px;
+        height: 353px;
+    }
+
+    .phone-nav-buttons {
+        left: -10px;
+        right: -10px;
     }
 }
