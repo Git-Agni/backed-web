@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './styles/GlobalStyle';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Intro from './components/Intro/Intro';
+import AppPreview from './components/AppPreview/AppPreview';
+import Testimonials from './components/Testimonials/Testimonials';
+import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
+
+const theme = {
+  colors: {
+    primary: '#0066ff',
+    secondary: '#333333',
+    background: '#ffffff',
+    text: '#333333',
+  },
+  breakpoints: {
+    mobile: '768px',
+    tablet: '1024px',
+  }
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <div className="App">
+        <Navbar />
+        <Hero />
+        <Intro />
+        <AppPreview />
+        <Testimonials />
+        <FAQ />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
