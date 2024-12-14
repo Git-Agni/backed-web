@@ -12,6 +12,19 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     color: ${props => props.theme.colors.text};
+    overflow-x: hidden;
+    background: ${props => props.theme.colors.background};
+  }
+
+  .App {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    background: ${props => props.theme.colors.background};
   }
 
   img {
@@ -22,6 +35,11 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  ${'' /* #section-wrapper-home{
+    background:  url('/images/hero.png') no-repeat center center;
+    background-size: cover;
+  } */}
 `;
 
 export default GlobalStyle;

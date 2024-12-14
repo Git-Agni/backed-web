@@ -1,41 +1,47 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './styles/GlobalStyle';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Intro from './components/Intro/Intro';
-import AppPreview from './components/AppPreview/AppPreview';
-import Testimonials from './components/Testimonials/Testimonials';
-import FAQ from './components/FAQ/FAQ';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Intro from './components/Intro';
+import AppPreview from './components/AppPreview';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
-const theme = {
-  colors: {
-    primary: '#0066ff',
-    secondary: '#333333',
-    background: '#ffffff',
-    text: '#333333',
-  },
-  breakpoints: {
-    mobile: '768px',
-    tablet: '1024px',
-  }
-};
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <div className="App">
-        <Navbar />
-        <Hero />
+    <div className="mt-0 w-full">
+      <div className="relative z-10 bg-red isolate" id="section-wrapper-home">
+        <div className=" top-0 z-50">
+          <Navbar />
+        </div>
+        <div className=" mb-16">
+          <Hero />
+        </div>
+      </div>
+
         <Intro />
+   
+
+      <div className="mt-16 mb-16">
         <AppPreview />
+      </div>
+
+      <div className="mt-16 mb-16">
         <Testimonials />
+      </div>
+
+      <div className="mt-16 mb-16">
         <FAQ />
+      </div>
+
+      <div className="mt-16">
         <Footer />
       </div>
-    </ThemeProvider>
+        {/* <h1 className='text-3xl font-bold underline bg-red-500'>Hello</h1> */}
+        
+      </div>
+     
   );
 }
 
