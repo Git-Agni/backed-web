@@ -3,29 +3,29 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "Question:Why to use Backed?",
+    question: "Why to use Backed?",
     answer:
-      "Answer:Backed offers personalized, expert-designed routines to help eliminate back pain and improve posture in just 5 minutes a day. Our app adapts to your body, schedule, and lifestyle, making it easier to maintain consistency and see real results.",
+      "Backed offers personalized, expert-designed routines to help eliminate back pain and improve posture in just 5 minutes a day. Our app adapts to your body, schedule, and lifestyle, making it easier to maintain consistency and see real results.",
   },
   {
-    question: "Question:In how many days will I see the result?",
+    question: "In how many days will I see the result?",
     answer:
-      "Answer:Results vary from person to person, but many users report feeling improvements within the first few weeks of consistent use. For significant changes in posture and pain reduction, we recommend following your personalized plan for at least 4-6 weeks.",
+      "Results vary from person to person, but many users report feeling improvements within the first few weeks of consistent use. For significant changes in posture and pain reduction, we recommend following your personalized plan for at least 4-6 weeks.",
   },
   {
-    question: "Question:Can I use it without the supervision of my physiologist?",
+    question: "Can I use it without the supervision of my physiologist?",
     answer:
-      "Answer:While Backed is designed to be used independently, we always recommend consulting with your healthcare provider before starting any new exercise program, especially if you have existing health conditions or injuries. Our app provides guidance, but it's not a substitute for professional medical advice.",
+      "While Backed is designed to be used independently, we always recommend consulting with your healthcare provider before starting any new exercise program, especially if you have existing health conditions or injuries. Our app provides guidance, but it's not a substitute for professional medical advice.",
   },
   {
-    question: "Question:Can I use it if I want to correct my posture?",
+    question: "Can I use it if I want to correct my posture?",
     answer:
-      "Answer:Backed includes specific exercises and routines designed to improve posture. Our app will create a personalized plan tailored to your posture goals, helping you build strength and awareness to maintain better alignment throughout your day.",
+      "Backed includes specific exercises and routines designed to improve posture. Our app will create a personalized plan tailored to your posture goals, helping you build strength and awareness to maintain better alignment throughout your day.",
   },
   {
-    question: "Question:How will Backed assess my back?",
+    question: "How will Backed assess my back?",
     answer:
-      "Answer:Backed uses a combination of user-provided information and advanced algorithms to assess your back health. When you start, you'll answer a series of questions about your pain, lifestyle, and goals. As you use the app, it will track your progress and adjust your plan based on your feedback and performance, ensuring a continuously optimized experience.",
+      "Backed uses a combination of user-provided information and advanced algorithms to assess your back health. When you start, you'll answer a series of questions about your pain, lifestyle, and goals. As you use the app, it will track your progress and adjust your plan based on your feedback and performance, ensuring a continuously optimized experience.",
   },
 ];
 
@@ -50,10 +50,10 @@ const FAQ = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h4 className="text-lg font-semibold italic">{faq.question}</h4>
+          <h4 className="text-lg  italic">{faq.question}</h4>
           {openIndex === index && (
             <motion.p
-              className="mt-2 text-gray-700"
+              className="mt-2 text-CustomGrayH"
               initial={{ height: 0 }}
               animate={{ height: "auto" }}
               transition={{ duration: 0.3 }}

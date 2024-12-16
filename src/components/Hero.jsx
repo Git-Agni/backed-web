@@ -28,17 +28,17 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className=" relative min-h-[100svh] overflow-hidden bg-cover bg-center px-4"
+      className=" relative min-h-[100svh] overflow-hidden bg-cover bg-center px-4 "
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <div className="container mx-auto flex min-h-[100svh] flex-col justify-center pt-20 md:pt-24 font-inter">
+      <div className="container md:ml-[80px] mx-auto flex min-h-[100svh] flex-col justify-center pt-20 md:pt-24 font-inter">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-xl"
+          className="max-w-xl sm:min-w-full"
         >
-          <h1 className="mb-6 text-4xl font-[700] text-customGrayH sm:text-5xl md:text-6xl">
+          <h1 className="mb-6 text-4xl font-[700] text-customGrayH sm:text-5xl md:text-[100px]">
             <span className="block">YOUR BACK</span>
             <span className="block">DESERVES BETTER</span>
           </h1>

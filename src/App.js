@@ -10,12 +10,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="mt-0 w-full">
+    <div className="mt-0 w-full ">
       <div className="relative z-10 bg-red isolate" id="section-wrapper-home">
         <div className=" top-0 z-50">
           <Navbar />
         </div>
-        <div className=" mb-16">
+        <div className=" mb-1">
           <Hero />
         </div>
       </div>

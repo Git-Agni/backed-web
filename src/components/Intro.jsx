@@ -6,11 +6,11 @@ const Intro = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="container mx-auto px-6 py-16 md:py-24 font-inter">
+    <section className="  container md:pl-[80px] mx-auto  py-16 md:py-[104px] font-inter id='how-it-works'">
       <div className="flex flex-col-reverse gap-12 lg:flex-row lg:items-center">
         {/* Left Section - Image */}
         <div className=" relative ">
-          <div className="relative w-full lg:w-1/2 overflow-hidden rounded-2xl bg-gray-100 mx-auto">
+          <div className="relative w-full sm:w-[60%] sm:h-[60%] overflow-hidden rounded-3xl bg-gray-100 ">
             <img
               src={intro}
               alt="Person doing legs up wall pose"
@@ -42,14 +42,14 @@ const Intro = () => {
 
         {/* Right Section - Content */}
        
-        <div className="w-full lg:w-1/2 py-2 px-4  ">
+        <div className="w-full lg:w-1/2 py-2 px-4 ">
        
             <div className="heading flex sm:justify-start justify-center">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-[20px] sm:text-[48px]  font-[400] tracking-tight text-gray-900 leading-snug text-center lg:text-left"
+                className="text-[20px] sm:text-[48px]  font-[400] tracking-tight text-CustomGrayH leading-snug text-center lg:text-left"
               >
                 <span className="block text-CustomGrayH italic">
                   People say getting rid of
@@ -57,7 +57,7 @@ const Intro = () => {
                 <span className="block text-CustomGrayH italic">
                   back pain is tough.
                 </span>
-                <span className="mt-2 block font-bold text-CustomGrayH">
+                <span className="mt-2 block font-[600] text-CustomGrayH">
                   We make it easier.
                 </span>
               </motion.h2>
@@ -68,14 +68,14 @@ const Intro = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="mt-6 text-[14px] sm:text-[18px] leading-relaxed text-CustomGrayD text-center sm:text-left"
+                className="mt-6 text-[14px] sm:text-[18px] leading-relaxed text-CustomGrayD text-center sm:text-left font-[500]"
               >
                 We believe in the power of change through consistency and a personalized plan that adapts to your body, schedule, and lifestyle. It's time to prioritize your health and wellness like never before—and we're here to guide you every step of the way. Answer a few questions and discover your personalized plan in just a few minutes.
               </motion.p>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-[182px] h-[54px] mt-8 rounded-full border-CustomBlue border-2 px-8 py-3 text-base font-semibold text-CustomGrayH transition-colors hover:bg-blue-700"
+                className="w-[182px] h-[54px] mt-8 rounded-full border-CustomBlue border-2 px-8 py-3 text-base font-semibold text-CustomGrayH transition-colors hover:bg-CustomBlue hover:text-white"
               >
                 Start now
               </motion.button>

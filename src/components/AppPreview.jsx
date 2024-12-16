@@ -16,9 +16,9 @@ const AppPreview = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center text-customGrayH">
-      <div className="w-full text-center mb-8">
-        <h2 className="text-[20px] sm:text-[48px] mb-4">
+    <div className=" id='reviews' relative w-full min-h-screen flex flex-col items-center justify-center text-customGrayH">
+      <div className="w-full text-center ">
+        <h2 className="text-[20px] sm:text-[48px] ">
           <span className="italic  font-[400]">A week-by-week plan.</span>
           <br />
           <span className="italic font-[400]">Made by us.</span>
@@ -52,7 +52,7 @@ const AppPreview = () => {
         <motion.p
           key={currentIndex}
           // text-[clamp(0.9rem,1.2vw,1.2rem)]
-          className="text-center text-CustomGrayH font-[700] my-4 max-w-xl mx-auto"
+          className="text-center text-CustomGrayH font-[600] my-4 max-w-xl mx-auto  text-[16px] sm:text-[32px] leading-10 px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}

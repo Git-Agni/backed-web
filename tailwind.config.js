@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '375px',
+        'xxs': '375px',
+        'xs': '576px',
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',
@@ -14,12 +14,10 @@ module.exports = {
         '2xl': '1536px',
       },
       colors: {
-        CustomGrayH: '#1F2024', // Used in writing Heading of Hero page and Intro page ka bold line
-        CustomGrayP: '#494A50' , //used to write p of hero and heading of intro
-        CustomGrayD: '#71727A',//for wrting description of intro
-        CustomBlue:  '#006FFD'
-
-
+        CustomGrayH: '#1F2024',
+        CustomGrayP: '#494A50',
+        CustomGrayD: '#71727A',
+        CustomBlue:  '#006FFD',
       },
       container: {
         center: true,
@@ -30,9 +28,11 @@ module.exports = {
           xl: '5rem',
           '2xl': '6rem',
         },
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'], // Set Inter as the default sans-serif font
+      },
     },
   },
-  
   plugins: [],
-}
+};

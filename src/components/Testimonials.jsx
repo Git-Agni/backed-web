@@ -65,10 +65,10 @@ const Testimonials = () => {
   const maxIndex = Math.max(0, testimonials.length - getVisibleCards());
 
   return (
-    <section className="container  mx-auto px-4 py-16 md:py-20">
+    <section className="id='reviews' container  mx-auto px-4 py-16 md:py-20">
       {/* Header */}
       <div className=" mx-auto max-w-2xl text-center text-CustomGrayH">
-        <h2 className="mb-8 text-3xl  md:text-4xl">
+        <h2 className="mb-4 text-3xl  md:text-4xl">
           <span className="block italic font-[400]">Real stories.</span>
           <span className="block italic font-[400]">Shared by them.</span>
           <span className="mt-2 block font-[700]">To inspire you.</span>

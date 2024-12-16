@@ -13,24 +13,28 @@ const PhonePreview = ({ screens, currentIndex, onNext, onPrev }) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.3 }}
-          className="w-full h-full object-contain "
+          className="w-full h-full object-contain px-"
         />
       </AnimatePresence>
+      {/* md:left-[-10px] md:right-[-10px] */}
 
-      <div className="absolute  top-1/2 left-[0px] right-[-0.1px] flex justify-between items-center transform -translate-y-1/2  pointer-events-none">
-        <button
-          onClick={onPrev}
-          className="pointer-events-auto bg-none border-none  p-4 text-CustomGrayH cursor-pointer text-[48px] "
-        >
-          &#60;
-        </button>
-        <button
-          onClick={onNext}
-          className="pointer-events-auto bg-none border-none text-[48px] p-4 text-CustomGrayH cursor-pointer"
-        >
-          &#62;
-        </button>
-      </div>
+     <div className="absolute top-1/2 left-[-35px] right-[-40px]  flex justify-between items-center transform -translate-y-1/2 pointer-events-none">
+      <button
+        onClick={onPrev}
+        className="pointer-events-auto  border-none pl-0 text-CustomGrayH cursor-pointer text-[48px]"
+        style={{ marginLeft: '20px' }}
+      >
+        &#60;
+      </button>
+      <button
+        onClick={onNext}
+        className="pointer-events-auto  border-none text-[48px]  text-CustomGrayH cursor-pointer"
+        style={{ marginRight: '20px' }}
+      >
+        &#62;
+      </button>
+    </div>
+
     </div>
   );
 };
